@@ -29,7 +29,7 @@ Statement st = con.createStatement();
 String DoctorName =request.getParameter("DoctorName");
 int in = st.executeUpdate("DELETE FROM doctordetails WHERE id='"+ ID +"'");
 con.close();
-out.println("<p> The record of " + DoctorName + " is Successfully Deleted. </p>");
+out.println("<p> The record of " + DoctorName + " is successfully deleted. </p>");
 out.println("<br>");
 out.println("<a href='list.jsp'> RETURN TO MAIN PAGE </a>");
 }
